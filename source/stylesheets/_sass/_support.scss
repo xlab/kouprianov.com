@@ -1,0 +1,125 @@
+/* support.css.scss
+ * Browser support styling
+ * ------------------------------------------------------------------ */
+
+html.IE9 {
+	section[role="main"] p:first-child:first-letter {
+		float: none;
+		font-size: 1em; // 13 / 13
+		line-height: 1.6em;
+		margin-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+		text-transform: normal;
+	}
+}
+
+/* IE8
+ * ------------------------------------------------------------------ */
+
+html.IE8 {
+
+	nav[role="navigation"] {
+		margin-bottom: 64px;
+	}
+	img {
+		width: auto;
+	}
+	.post-title h4 {
+		display: block;
+	}
+	.post-title {
+		margin-bottom: 44px;
+		display: block;
+	}
+ 	p + img, p + a img, br + img, br + a img, p + h1, p .size-full, p + h2, p + h3, p + h5, p + h6, p + p img, p + dl, p + .alert, p + address, p + .vcard, p + .classic-caption, p + .classic-title {
+		margin-top: 22px;
+	}
+	.title {
+		margin-top: -22px;
+	}
+	.flex-control-nav li,
+	.entry-footer code {
+		display: none;
+	}
+	section[role="main"] p:first-child:first-letter {
+		float: none;
+		font-size: 1em; // 13 / 13
+		line-height: 1.6em;
+		margin-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+		text-transform: normal;
+	}
+}
+
+/* IE7
+ * ------------------------------------------------------------------ */
+
+html.IE7 {
+
+	.post-title {
+		display: block;
+		border-bottom: 0;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+	}
+	.widget_tag_cloud {
+		white-space: nowrap;
+	}
+	hr {
+		color:#fff;
+		border-bottom: $rule;
+	}
+	h5 {
+		background: transparent;
+		color: #000;
+	}
+	.feature {
+		display: none;
+	}
+	.feature + h3 {
+		margin-top: 11px;
+	}
+	.entry-footer {
+		padding: 11px 0 44px 0;
+	}
+	p + img, p + a img, br + img, br + a img, p + h1, p .size-full, p + h2, p + h3, p + h5, p + h6, p + p img, p + dl, p + .alert, p + address, p + .vcard, p + .classic-caption, p + .classic-title {
+		margin-top: 22px;
+	}
+	.title {
+		margin-top: -22px;
+	}
+	.flex-control-nav li,
+	.entry-footer code {
+		display: none;
+	}
+	section[role="main"] p:first-child:first-letter {
+		float: none;
+		font-size: 1em; // 13 / 13
+		line-height: 1.6em;
+		margin-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+		text-transform: normal;
+	}
+	nav[role="navigation"] {
+		margin-bottom: 64px;
+		li {
+			float: left;
+		}
+		li ul {
+			display: none;
+		}
+		li:hover ul {
+			display: block;
+		}
+		li ul li a {
+			display: block;
+		}
+	}
+	nav[role="navigation"] ul {display: inline-block;}
+	nav[role="navigation"] ul {display: inline;}
+	#comments-wrapper { float: none; }
+}

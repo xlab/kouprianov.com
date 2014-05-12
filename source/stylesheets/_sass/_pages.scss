@@ -1,0 +1,71 @@
+/* pages.css.scss
+ * Pages and page templates
+ * ------------------------------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 22px;
+	clear: both;
+}
+.alignleft {
+	margin-right: $line;
+}
+.alignright {
+	margin-left: $line;
+}
+.title {
+	display: block;
+	margin: {
+		bottom: 39px;
+		top: 0;
+	}
+	text-align: center;
+	h3 {
+		margin-top: -14px;
+	}
+}
+
+/* Single
+ * ------------------------------------------------------------------ */
+
+#pagination {
+	display: block;
+	text-align: center;
+}
+
+.single {
+	#pagination h3 {
+		display: inline-block;
+		margin: {
+			bottom: 11px;
+			top: 22px;
+		}
+	}
+	.entry {
+		margin-bottom: 0;
+	}
+}
+
+/* Captions
+ * ------------------------------------------------------------------ */
+
+.explained,
+.explained dt,
+.post-feature figcaption {
+	display: block;
+	color: $tcolor;
+	font: {
+		family: $serif;
+		size: 0.8em;
+		style: italic;
+	}
+	line-height: 1.5em;
+	text-align: center;
+}
+.explained,
+.explained dt {
+	margin-top: $line;	
+}
+
+.explained dd {
+	margin: -30px 0 0;
+}

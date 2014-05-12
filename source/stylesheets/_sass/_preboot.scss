@@ -1,0 +1,56 @@
+// preboot.css.scss
+// Variables and mixins
+// ------------------------------------------------------------------
+
+// Variables
+// ------------------------------------------------------------------
+
+// Grid
+$column: 7.03125%;
+$gutter: 6.25%;
+$width: 900px;
+$wcolumn: 9.57446809%;
+$wgutter: 8.5106383%;
+
+// Fonts
+$deco:  Palatino, Georgia, "Times New Roman", serif;
+$mono:  'Source Code Pro', Monaco, 'Ubuntu Mono', Consolas, monospace;
+$serif: 'PT Serif', Georgia, "Times New Roman", Times, serif;
+
+// Default Color
+$bcolor: #000000;
+$wcolor: #ffffff;
+$scolor: #ebebeb;
+$tcolor: #515151;
+$pcolor: #b10000;
+$slightcolor: rgba(255, 109, 1, 0.6);
+$dcolor: #481f00;
+$acolor: rgba(255, 109, 1, .1);
+
+// Setup
+$line: 1.692em;
+$nrule: .09765625%;
+$rule: 1px dotted #d3d3d3;
+$space: $gutter / 2;
+
+// Mixins
+// ------------------------------------------------------------------
+
+// Border radius
+@mixin border-radius($radius: 3px) {
+	-webkit-border-radius: $radius;
+		 -moz-border-radius: $radius;
+					border-radius: $radius;
+}
+// Box shadows
+@mixin box-shadow($shadow: 0 1px 3px rgba( 100, 100, 100, .45)) {
+	-webkit-box-shadow: $shadow;
+		 -moz-box-shadow: $shadow;
+					box-shadow: $shadow;
+}
+// Transitions
+@mixin transition($transition: color .1s linear) {
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+	        transition: $transition;
+}

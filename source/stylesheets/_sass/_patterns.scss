@@ -1,0 +1,74 @@
+/* patterns.css.scss
+ * Repeatable patterns
+ * ------------------------------------------------------------------ */
+
+h1 {
+	font-size: 1.692em;
+	a:link, a:visited {
+		color: #000;
+		&:hover {
+			color: $pcolor;
+		}
+	}
+}
+h2 {
+	font-size: 1.385em;
+}
+h3 {
+	color: $pcolor;
+	font : {
+		style: italic;
+		size: 1.2em;
+	}
+	a:link, a:visited {
+		color: $pcolor;
+	}
+}
+h4 {
+	color: $tcolor;
+	font: {
+		size: .923em;
+		style: italic;
+	}
+}
+h5 {
+	background: $slightcolor;
+	color: #000;
+	display: inline-block;
+	font: {
+		size: .923em;
+	}
+	padding: 0 .25em;
+	a:link, a:visited {
+		color: #000;
+	}
+}
+h6 {
+	font-size: .846em;
+	a:hover, a:link {
+		border-bottom: $rule;
+	}
+}
+
+
+/* Media
+ * ------------------------------------------------------------------ */
+
+.explained img {
+	margin-bottom: 22px;
+}
+embed,
+object {
+	margin-bottom: 22px;
+	max-width: 100%;
+}
+video,
+iframe {
+	max-width: 100%;
+}
+section[role="main"] {
+	p > iframe {
+		margin: 22px;
+		margin-left: -1.5em;
+	}
+}

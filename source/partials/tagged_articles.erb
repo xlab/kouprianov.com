@@ -1,0 +1,14 @@
+<% page_articles.each_with_index do |article, i| %>
+    <% if (defined?(tag_filter) and article.tags.include?(tag_filter)) or (
+            defined?(work) and 
+            defined?(tag_filter) and 
+            work and 
+            article.data.work and 
+            article.tags.include?(tag_filter)
+        ) %>
+    <li>
+        <%= link_to smartypants(article.title), article %>
+        <span><%= I18n.l article.date, :format => "%b&nbsp;%e" %></span>
+    </li>
+    <% end %>
+<% end %>

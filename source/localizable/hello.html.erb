@@ -1,0 +1,27 @@
+<% content_for(:page_title, I18n.t(:title_hello)) %>
+<article class="hello">
+<!--    <p><%= smartypants(I18n.t(:hello_row1)) %></p> -->
+    <hr>
+    <p><%= smartypants(I18n.t(:hello_row2)) %></p>
+    
+    <div class="project-action row-fluid">
+    <!--
+        <% link_to('works', :class => "button big red d3 icon-button") do %>
+            <i class="icon-hand-right"></i><%= I18n.t :hello_projects %>
+        <% end %>
+    -->
+
+        <% link_to('notes', :class => "button big red d3 icon-button") do %>
+            <i class="icon-user"></i><%= I18n.t :hello_notes %>
+        <% end %>
+
+        <% link_to('mailto:max@kc.vc', :class => "button big red d3 icon-button") do %>
+            <i class="icon-pencil"></i><%= I18n.t :hello_email %>
+        <% end %>
+
+        <% link_to('https://github.com/xlab', :class => "button big red d3 icon-button") do %>
+            <i class="icon-github"></i><%= I18n.t :hello_github %>
+        <% end %>
+        </div>
+    </div>
+</article>

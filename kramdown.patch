@@ -1,0 +1,17 @@
+--- lib/kramdown/converter/html.rb.orig  2013-08-08 01:21:05.000000000 +0400
++++ lib/kramdown/converter/html.rb	2013-08-08 01:22:14.000000000 +0400
+@@ -121,9 +121,11 @@
+               end.join('')
+             end
+           end
+-          code_attr = {}
+-          code_attr['class'] = "language-#{lang}" if lang
+-          "#{' '*indent}<pre#{html_attributes(attr)}><code#{html_attributes(code_attr)}>#{result}\n</code></pre>\n"
++          if el.attr['class'].to_s =~ /\brawblock\b/
++            "#{' '*indent}<pre><code>#{result}\n</code></pre>\n"
++          else
++            "#{' '*indent}<pre#{html_attributes(attr)}>#{result}\n</pre>\n"
++          end
+         end
+       end
+ 

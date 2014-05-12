@@ -1,0 +1,42 @@
+<% content_for(:page_title, I18n.t(:title_notes)) %>
+<article class="page type-page hentry">
+    <header class="entry-header">
+        <div class="classic-caption">
+            <h1 class="entry-title"><i class="icon-book"></i> <%= I18n.t :notes_notes_header %></h1>
+            <p><%= smartypants(I18n.t(:notes_notes_description)) + " " + mail_to('max@kc.vc') %></p>
+        </div>
+    </header>
+
+    <div class="entry-content">
+    <div class="row-fluid archives">
+        <div class="span4">
+            <h3><%= I18n.t :notes_reposts %></h3>
+            <ul class="icons icon-bubble-list nospace">
+                <%= partial('partials/tagged_articles', :locals => { :tag_filter => 'repost'}) %>
+            </ul>
+        </div>
+
+        <div class="span4">
+            <h3><%= I18n.t :notes_cases %></h3>
+            <ul class="icons icon-bubble-list nospace">
+                <%= partial('partials/tagged_articles', :locals => { :tag_filter => 'case'}) %>
+            </ul>
+        </div>
+
+        <div class="span4">
+            <h3><%= I18n.t :notes_translations %></h3>
+            <ul class="icons icon-bubble-list nospace">
+                <%= partial('partials/tagged_articles', :locals => { :tag_filter => 'translation'}) %>
+            </ul>
+        </div>
+        <!--
+        <div class="span4">
+            <h3><%= I18n.t :notes_noise %></h3>
+            <ul class="icons icon-bubble-list nospace">
+                <%= partial('partials/tagged_articles', :locals => { :tag_filter => 'archive'}) %>
+            </ul>
+        </div>
+        -->
+    </div>
+    </div>
+</article>

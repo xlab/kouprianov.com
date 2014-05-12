@@ -1,0 +1,52 @@
+---
+ru:
+  header_lang: "ru-RU"
+  title_kouprianov: "~ Максим Куприянов"
+  title_annotation: "software engineer, gadget-geek, perfectionist"
+  title_hello: "Максим Куприянов"
+  title_notes: "Блог"
+  title_works: "Проекты"
+
+  #
+  # Controls
+  control_goto_top: "Наверх"
+
+  #
+  # Menu
+  menu_cv: "Резюме"
+  menu_projects: "Проекты"
+  menu_notes: "Заметки"
+  menu_links: "Ссылки"
+  menu_links_quotes: "Уютный <br />Цитатник"
+  menu_social: "Социальные ссылки"
+  menu_social_habrahabr: "Хабрахабр"
+  menu_social_vkontakte: "ВКонтакте"
+
+  #
+  # Hello page
+  hello_row1: "Привет. Рад встрече."
+  hello_row2: "Привет. Это мой личный веб-уголок, здесь я стараюсь вести учёт ценных идей и полезных дел. Приглашаю вас пройти по ссылочкам, но будьте осторожны."
+  hello_projects: "ПРОЕКТЫ"
+  hello_notes: "БЛОГ"
+
+  #
+  # Notes page
+  notes_notes_header: "БЛОКНОТ"
+  notes_notes_description: "Здесь хранятся записки и публикации на различные темы, не обязательно технические.<br />Если у вас есть какие-нибудь комментарии, пишите на почту"
+  notes_cases: "Рецепты и методы"
+  notes_reposts: "Репосты"
+  notes_translations: "Переводы"
+  notes_noise: "Шум"
+  
+  #
+  # Works page
+  works_works_header: "ПРОЕКТЫ"
+  works_works_description: "Тут находятся странички моих проектов, достойных памяти. Некоторые из них были завершены давно, в других же разработка продолжается и сейчас. Если у вас есть какие-нибудь комментарии или вопросы, пишите на почту"
+  works_academic: "Учебные"
+  works_webdev: "Веб-разработка"
+  works_misc: "Разное"
+  works_qt: "Qt/C++"
+
+  #
+  # Post
+  posted_on: "Последнее обновление"

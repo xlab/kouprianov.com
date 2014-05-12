@@ -1,0 +1,155 @@
+/* posts.css.scss
+ * Post styling
+ * ------------------------------------------------------------------ */
+
+.entry {
+	clear: both;
+}
+.entry-footer {
+	border: {
+		bottom: $rule;
+		top: $rule;
+	}
+	display: block;
+	margin: 0 auto 44px;
+	padding: 22px 0 44px 0;
+	.alignleft {
+		margin-left: $wgutter;
+	}
+	.alignright {
+		margin-right: $wgutter;
+	}
+	code {
+		background: $pcolor; // fallback
+		background: $acolor;
+		font-size: 8px;
+		margin-right: 6px;
+		padding: 1px 3px;
+		position: relative;
+		top: -1px;
+	}
+}
+.entry-footer-none {
+	border: {
+		top: $rule;
+	}
+	display: block;
+	margin: 0 auto 44px;
+}
+.post {
+	float: left;
+	margin-bottom: 44px;
+	width: 100% !important;
+	.column {
+		border-right: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+.page-links,
+.tag-links,
+.cat-links {
+	clear: both;
+	display: block;
+	margin-top: 22px;
+	margin-bottom: -11px;
+	a:link, a:visited {
+		border-bottom: $rule;
+	}
+}
+.cat-links {
+	margin-bottom: 11px;
+}
+.tag-links {
+	background: url(/images/tag.svg) no-repeat;
+	margin-top: 16px;
+	p {
+		margin-left: 14px;
+		position: relative;
+		top: -5px;
+	}
+}
+section[role="main"] + .tag-links {
+	margin-top: 22px;
+}
+.first {
+	margin-bottom: 0 !important;
+}
+
+.post-title {
+	border-bottom: $rule;
+	margin-bottom: 44px;
+	word-wrap: break-word;
+	text-align: center;
+	display: block;
+	h1 {
+		margin-bottom: 11px !important;
+	}
+	h3 {
+		margin-top: -22px;
+		margin-bottom: -10px !important;
+	}
+	h4 {
+		display: inline-block;
+		margin-bottom: 22px;
+		padding: 0 1em;
+		position: relative;
+		top: 33px;
+	}
+	h1 + h3 {
+		margin-top: 11px !important;
+	}
+}
+.no-author {
+	h1 {
+		margin-bottom: 0 !important;
+	}
+	.banner {
+		margin: 11px auto;
+	}
+	.feature {
+		margin-bottom: -36px;
+	}
+}
+
+/* Banner
+ * ------------------------------------------------------------------ */
+
+.banner  {
+	background: url(/images/mid.svg);
+	color: #030303;
+	display: inline-block;
+	font: {
+		family: "Helvetica Neue", Arial, Clean, Sans-serif;
+		size: 10px;
+	}
+	height: 19px;
+	letter-spacing: .25em;
+	line-height: 19px;
+ 	margin: -20px auto 0px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: -.4em;
+	width: auto;
+	&:before, &:after {
+		display: block;
+		font-size: 0;
+		height: 19px;
+		position: relative;
+		width: 21px;
+	}
+	&:before {
+		content: url(/images/left-tail.svg);
+		float: left;
+		left: -10px;
+	}
+	&:after {
+		content: url(/images/right-tail.svg);
+		float: right;
+		right: -10px;
+	}
+}
+

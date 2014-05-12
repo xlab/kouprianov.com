@@ -1,0 +1,56 @@
+---
+en:
+  header_lang: "en-US"
+  title_kouprianov: "~ Maxim Kouprianov"
+  title_annotation: "software engineer, gadget-geek, perfectionist"
+  title_hello: "Maxim Kouprianov"
+  title_notes: "Blog"
+  title_works: "Works"
+
+  #
+  # Controls
+  control_goto_top: "Return to top"
+
+  #
+  # Menu
+  menu_cv: "Résumé"
+  menu_projects: "Works"
+  menu_notes: "Notes"
+  menu_links: "Links"
+  menu_links_quotes: "My Bash"
+  menu_social: "Social links"
+  menu_social_github: "GitHub"
+  menu_social_habrahabr: "Habrahabr"
+  menu_social_vkontakte: "VK"
+  menu_social_twitter: "Twitter"
+
+  #
+  # Hello page
+  hello_row1: "It's nice to meet you."
+  hello_row2: "Hello. This is my personal website, here I keep my thoughts and projects organized well. If you’re interested, take a look. But watch out, that cyrillic.."
+  hello_projects: "WORKS"
+  hello_notes: "BLOG"
+  hello_email: "max@kc.vc"
+  hello_github: "git.io/xlab"
+  
+  #
+  # Notes page
+  notes_notes_header: "NOTEPAD"
+  notes_notes_description: "This section contains a collection of notes on various topics. There might be a technical ones or philosophical ones as well.<br />If you want to comment something, please email to"
+  notes_cases: "Cases"
+  notes_reposts: "Reposts"
+  notes_translations: "Translations"
+  notes_noise: "Noise"
+
+  #
+  # Works page
+  works_works_header: "WORKS"
+  works_works_description: "There are my notable works I've made in the past. Some of them are in continuous development.<br />If you have any comments or questions, please email to"
+  works_academic: "Academic"
+  works_webdev: "Web Dev"
+  works_misc: "Miscellaneous"
+  works_qt: "Qt/C++"
+
+  #
+  # Post
+  posted_on: "Last updated"

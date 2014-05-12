@@ -1,0 +1,103 @@
+/* queries.css.scss
+ * Media queries
+ * ------------------------------------------------------------------ */
+
+@media screen and (min-width:560px) and (min-height:560px) {
+	.columnize {
+		-moz-column-count: 2;
+		-moz-column-gap: 44px;
+		-moz-column-rule: $rule;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 44px;
+		-webkit-column-rule: $rule;
+		column-count: 2;
+		column-gap: 44px;
+		column-rule: $rule;
+	}
+	.first.column {
+		border-right: $rule;
+		float: left;
+		padding-right: $space; // 28 / 880
+		width: 45.7446809%; // 402 / 880
+	}
+	.last.column {
+		float: right;
+		margin-left: $space; // 28 / 880
+		width: $column * 4 + $gutter * 3 - $nrule; // 402 / 880
+
+		p:first-child:first-letter {
+			float: none;
+			font-size: 1em; // 13 / 13
+			line-height: 1.6em;
+			margin-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+			text-transform: normal;
+		}
+	}
+	.flex-direction-nav li a {
+		top: 46%;
+	}
+	#respond {
+ 		width: 60%;
+	}
+	.to-top {
+		display: none;
+	}
+}
+
+/* Large screen
+ * ------------------------------------------------------------------ */
+
+@media screen and (min-width:900px) and (min-height:560px) {
+	.columnize {
+		-moz-column-count: 2;
+		-moz-column-gap: 60px;
+		-moz-column-rule: $rule;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 60px;
+		-webkit-column-rule: $rule;
+		column-count: 2;
+		column-gap: 60px;
+		column-rule: $rule;
+	}
+	.first.column {
+		float: left;
+		padding-right: $wgutter / 2; // 30 / 645
+		width: $wcolumn * 3 + $wgutter * 2; // 294 / 645
+	}
+	.last.column {
+		float: left;
+		margin-left: $wgutter / 2; // 30 / 880
+		width: $wcolumn * 3 + $wgutter * 2 - $nrule * 2; // 294 / 645
+	}
+	aside[role="complementary"] {
+		border-top: 0;
+		clear: none;
+		float: right;
+	 	margin-top: 0;
+	 	padding-top: 0;
+	 	width: $column * 2 + $gutter; // 178 / 880
+	}
+	#wrapper {
+		float: left;
+	}
+	#pagination {
+		width: 100%;
+	}
+	.entry-footer {
+		.alignleft {
+			margin-left: $wgutter * 2;
+		}
+		.alignright {
+			margin-right: $wgutter * 2;
+		}
+	}
+}
+
+@media screen and (min-width:1030px) {
+	#container {
+		margin: $space auto; // 28 / 880
+		padding: 30px 64px;
+	}
+}
