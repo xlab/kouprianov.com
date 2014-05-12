@@ -81,7 +81,7 @@ set :images_dir, 'images'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :minify_html, :remove_http_protocol => false
+  activate :minify_html
   activate :favicon_maker
 
   # Compress PNGs after build
